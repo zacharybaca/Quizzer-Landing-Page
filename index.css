@@ -1,0 +1,13 @@
+.box {
+	height: 64px;
+	width: 1440px;
+	background-color: #363648;
+}
+
+.line-1 {
+	box-sizing: border-box;
+	height: 1px;
+	width: 800px;
+	border: 1px solid #979797;
+}
+
