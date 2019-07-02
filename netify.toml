@@ -1,0 +1,4 @@
+[build] 
+base="quiz-dig"
+publish="quiz-dig/build/"
+command="yarn build"
