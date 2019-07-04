@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 
 
@@ -26,6 +27,8 @@
               alt="Logo White" 
               height="35">
             </a>
+          </div>
+          <div>
             <!-- <div> -->
             <button class="loginButton" onclick="location.href='https://quizzer.netlify.com/'" type="button">Login</button>
           <!-- </div> -->
@@ -34,12 +37,23 @@
 
 
   <body>
+    <div class='middle-container'>
       <div class="rectangle">
+        <div>
           <h1 class="quizzes-with-built">Quizzes with built in
-              follow-up questions</h1>
+            follow-up questions</h1>
+            <ul class="favorables">
+              <li>Build in follow-up questions for students who answer incorrectly</li>
+              <li>Create and assign quizzes to students </li>
+              <li>Students can take quiz anywhere </li>
+              <li>Android app available for students</li>
+              <li>Organize quizzes with folders</li>
+              
+            </ul>
+          </div>
               <div class="illustration">
                   <img 
-                  className="illustration" 
+                  
                   src="illustration.svg" 
                   alt="illustration" 
                   >
@@ -48,207 +62,12 @@
                 <button class="signupButton" onclick="location.href='https://quizzer.netlify.com/'" type="button">Sign Up Now</button>
               </div>
       </div>
-
       <div class="line-1">
+    </div>
+      
         </div>
 
-     
-  
-
-  <style>
-    .homepage{ 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 15px;
-    height: 64px;
-    width: 100%;
-    background-color: #363648;
-}
-
-.logo {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
-    text-align: center;
-    margin-right: 800px;
-}
-
-.cards {
-      display: flex;
-      margin: 11rem; 
-      margin-top: 5rem;
-
-    }
-    .cardsBottom {
-      display: flex;
-      margin: 11rem; 
-    }
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      max-width: 250px;
-      margin: auto;
-      text-align: center;
-      font-family: arial;
-    }
-
-    .title {
-      color: grey;
-      font-size: 18px;
-    }
-
-    button {
-      border: none;
-      outline: 0;
-      display: inline-block;
-      padding: 8px;
-      /* color: white; */
-      background-color:#6369D1;
-      text-align: center;
-      cursor: pointer;
-      width: 100%;
-      font-size: 18px;
-      /* color: #6369D1; */
-    }
-
-    button:hover,
-    a:hover {
-      opacity: 0.7;
-    }
-
-    .loginButton {
-	height: 40px;
-	width: 101px;
-	border-radius: 4px;
-  background-color: #FFFFFF;
-  font-family: "Open Sans";
-  font: #6369D1;
-  font-size: 16px;
-  margin-left: 900px;
-}
-
-    h2 {
-      padding-top: 7%;
-    }
-
-    body {
-      background-color: #F4F6F7;
-      margin: 0;
-    font-family: Open Sans;
-    background-color: #f4f6f7;
-    -webkit-font-smoothing: antialiased;
-    }
-
-.rectangle {
-	height: 800px;
-	width: 1200px;
-	border-radius: 4px;
-	background-color: #FFFFFF;
-  /* border: 1px solid black; */
-  margin-top: 40px;
-  margin-left: 1.5rem;
-
-}  
-
-.line-1 {
-	box-sizing: border-box;
-  margin-left: 13rem;
-  margin-top: 5rem;
-	height: 1px;
-	width: 800px;
-	border: 1px solid #979797;
-}
-
-.quizzes-with-built {
-  margin-left: 7rem
-	height: 128px;
-	width: 488px;
-	color: #000000;
-	font-family: "Open Sans";
-	font-size: 48px;
-	font-weight: bold;
-	line-height: 64px;
-  /* border: 3px solid green; */
-}
-
-.container {
-  margin-left: 15rem;
-	height: 346px;
-	width: 396px;
-	border-radius: 8px;
-	background-color: #F2F2F2;
-}
-
-.illustration {	
-  height: 630px;	
-  width: 769px;
-  /* border: 1px solid red; */
-    margin-left: 30rem;
-}
-
-.signupButton {
-	height: 64px;
-	width: 224px;
-  white-space: nowrap;
-  border: 0;
-  outline: 0;
-  display: inline-block;
-  /* height: 40px; */
-  line-height: 40px;
-  padding: 0 14px;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-  color: #fff;
-  border-radius: 4px;
-  font-size: 15px;
-  font-weight: 600;
-  /* text-transform: uppercase; */
-  letter-spacing: 0.025em;
-  background-color: #6772e5;
-  text-decoration: none;
-    margin-left: 25rem;
-    position: absolute;
-    top: 92%;
-    left: 30%;
-}
-
-button:hover {
-  color: #fff;
-  cursor: pointer;
-  background-color: #7795f8;
-  transform: translateY(-1px);
-  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
-}
-
-.text {
-	height: 24px;
-	width: 192px;
-	color: #FFFFFF;
-	font-family: "Open Sans";
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 28px;
-	text-align: center;
-}
-
-.quizzes-with-built {
-  margin-left: 3rem;
-	height: 8px;
-	width: 488px;
-	color: #000000;
-	font-family: "Open Sans";
-	font-size: 48px;
-	font-weight: bold;
-	line-height: 64px;
-}
-
-.background {
-	height: 1938px;
-	width: 1440px;
-	background-color: #F4F6F7;
-}
-
-  </style>
+    
   </head>
 
   <body>
@@ -259,12 +78,8 @@ button:hover {
         <h1>Joseph Rios</h1>
         <p class="title">Web Developer</p>
         <p>Lambda School</p>
-        <div style="margin: 24px 0;">
-          <a href="#"><i class="fa fa-briefcase"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-        </div>
-        <p><button>Contact</button></p>
+        
+       
       </div>
 
 
@@ -275,13 +90,8 @@ button:hover {
       <h1>Rosa Perez</h1>
       <p class="title">Web Developer</p>
       <p>Lambda School</p>
-      <div style="margin: 24px 0;">
-        <a href="https://github.com/paintedlbird7 "><i class="fa fa-briefcase"></i></a>
-        <a href="https://paintedlbird7.github.io/RosaPerezResume
-        "><i class="fa fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/rosa-perez-6b1a4816/ "><i class="fa fa-linkedin"></i></a>
-      </div>
-      <p><button>Contact</button></p>
+      
+     
     </div>
 
 
@@ -291,12 +101,8 @@ button:hover {
       <h1>Marc Thiongo</h1>
       <p class="title">Web Developer</p>
       <p>Lambda School</p>
-      <div style="margin: 24px 0;">
-        <a href="#"><i class="fa fa-briefcase"></i></a>
-        <a href="#"><i class="fa fa-github"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-      </div>
-      <p><button>Contact</button></p>
+      
+     
     </div>
     </div>
 
@@ -307,12 +113,8 @@ button:hover {
       <h1>Tigran Sargsyan</h1>
       <p class="title">Web Developer</p>
       <p>Lambda School</p>
-      <div style="margin: 24px 0;">
-        <a href="#"><i class="fa fa-briefcase"></i></a>
-        <a href="#"><i class="fa fa-github"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-      </div>
-      <p><button>Contact</button></p>
+      
+     
     </div>
 
         <!-- <h2 style="text-align:center">User Profile Card</h2> -->
@@ -321,12 +123,8 @@ button:hover {
           <h1>Charles Godoy</h1>
           <p class="title">Android Developer</p>
           <p>Lambda School</p>
-          <div style="margin: 24px 0;">
-            <a href="#"><i class="fa fa-briefcase"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-          </div>
-          <p><button>Contact</button></p>
+          
+         
         </div>
 
          
@@ -336,12 +134,8 @@ button:hover {
       <h1>Nathan Melby</h1>
       <p class="title">User Experience Designer</p>
       <p>Lambda School</p>
-      <div style="margin: 24px 0;">
-        <a href="#"><i class="fa fa-briefcase"></i></a>
-        <a href="#"><i class="fa fa-github"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-      </div>
-      <p><button>Contact</button></p>
+      
+     
     </div>
 
     </div>
